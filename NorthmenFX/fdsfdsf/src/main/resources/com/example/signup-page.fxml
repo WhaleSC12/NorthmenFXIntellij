@@ -3,6 +3,7 @@
 <?import com.gluonhq.charm.glisten.control.DropdownButton?>
 <?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.image.Image?>
@@ -10,6 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -34,24 +36,34 @@
          </font>
       </Label>
       <Line endX="200.0" layoutX="119.0" layoutY="168.0" startX="-100.0" stroke="WHITE" strokeWidth="1.5" />
-      <TextField layoutX="37.0" layoutY="144.0" prefHeight="17.0" prefWidth="308.0" promptText="USERNAME" />
+      <TextField fx:id="usernameField" layoutX="37.0" layoutY="144.0" prefHeight="17.0" prefWidth="308.0" promptText="USERNAME" />
       <Line endX="200.0" layoutX="120.0" layoutY="219.0" startX="-100.0" stroke="WHITE" strokeWidth="1.5" />
-      <TextField layoutX="38.0" layoutY="195.0" prefHeight="17.0" prefWidth="292.0" promptText="FIRST NAME" />
-      <Button alignment="CENTER" layoutX="235.0" layoutY="398.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="SIGNIN" textAlignment="CENTER" textFill="WHITE">
+      <TextField fx:id="firstNameField" layoutX="38.0" layoutY="195.0" prefHeight="17.0" prefWidth="292.0" promptText="FIRST NAME" />
+      <Button fx:id="signinButton" alignment="CENTER" layoutX="235.0" layoutY="398.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="SIGNIN" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Segoe UI Semibold" size="14.0" />
          </font>
       </Button>
       <Line endX="200.0" layoutX="120.0" layoutY="273.0" startX="-100.0" stroke="WHITE" strokeWidth="1.5" />
-      <TextField layoutX="38.0" layoutY="249.0" prefHeight="17.0" prefWidth="292.0" promptText="LAST NAME" />
+      <TextField fx:id="lastNameField" layoutX="38.0" layoutY="249.0" prefHeight="17.0" prefWidth="292.0" promptText="LAST NAME" />
       <Line endX="200.0" layoutX="120.0" layoutY="325.0" startX="-100.0" stroke="WHITE" strokeWidth="1.5" />
       <Line endX="200.0" layoutX="120.0" layoutY="378.0" startX="-100.0" stroke="WHITE" strokeWidth="1.5" />
-      <TextField layoutX="38.0" layoutY="353.0" prefHeight="17.0" prefWidth="292.0" promptText="PASSWORD" />
-      <DropdownButton layoutX="37.0" layoutY="302.0" prefHeight="17.0" prefWidth="115.0">
+      <TextField fx:id="passwordField" layoutX="38.0" layoutY="353.0" prefHeight="17.0" prefWidth="292.0" promptText="PASSWORD" />
+      <DropdownButton fx:id="advisorSelectionField" layoutX="37.0" layoutY="302.0" prefHeight="17.0" prefWidth="115.0">
           <items>
               <MenuItem text="Advisor 1" />
               <MenuItem text="Adivsor 2" />
           </items>
       </DropdownButton>
+      <Text fill="WHITE" layoutX="85.0" layoutY="681.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account?">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Text>
+      <Hyperlink id="sign-up-link" fx:id="switchToLoginPageButton" layoutX="223.0" layoutY="668.0" onAction="#handleSignUp" text="Log In!" textFill="#00a1ff">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Hyperlink>
    </children>
 </AnchorPane>

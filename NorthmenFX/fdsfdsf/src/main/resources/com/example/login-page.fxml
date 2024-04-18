@@ -2,12 +2,14 @@
 
 <?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -32,18 +34,23 @@
          </font>
       </Label>
       <Line endX="200.0" layoutX="119.0" layoutY="253.0" startX="-100.0" stroke="WHITE" strokeWidth="1.5" />
-      <TextField layoutX="37.0" layoutY="229.0" prefHeight="17.0" prefWidth="292.0" promptText="USERNAME" />
+      <TextField fx:id="usernameField" layoutX="37.0" layoutY="229.0" prefHeight="17.0" prefWidth="292.0" promptText="USERNAME" />
       <Line endX="200.0" layoutX="120.0" layoutY="318.0" startX="-100.0" stroke="WHITE" strokeWidth="1.5" />
-      <TextField layoutX="38.0" layoutY="294.0" prefHeight="17.0" prefWidth="292.0" promptText="PASSWORD" />
-      <Button alignment="CENTER" layoutX="235.0" layoutY="350.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+      <TextField fx:id="usernameField" layoutX="38.0" layoutY="294.0" prefHeight="17.0" prefWidth="292.0" promptText="PASSWORD" />
+      <Button fx:id="loginButton" alignment="CENTER" layoutX="235.0" layoutY="350.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="14.0" />
          </font>
       </Button>
-      <Button alignment="BASELINE_LEFT" contentDisplay="BOTTOM" layoutX="20.0" layoutY="326.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="133.0" text="New? Click here" textAlignment="CENTER" textFill="#bebebe">
+      <Text fill="WHITE" layoutX="84.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
          <font>
-            <Font name="Segoe UI Bold" size="13.0" />
+            <Font name="Segoe UI" size="12.0" />
          </font>
-      </Button>
+      </Text>
+      <Hyperlink id="sign-up-link" fx:id="switchToSignupPageButton" layoutX="213.0" layoutY="669.0" onAction="#handleSignUp" text="Sign up!" textFill="#00a1ff">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Hyperlink>
    </children>
 </AnchorPane>
