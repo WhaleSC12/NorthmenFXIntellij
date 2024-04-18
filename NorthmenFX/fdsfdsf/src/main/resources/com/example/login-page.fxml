@@ -37,7 +37,12 @@
       <TextField layoutX="38.0" layoutY="294.0" prefHeight="17.0" prefWidth="292.0" promptText="PASSWORD" />
       <Button alignment="CENTER" layoutX="235.0" layoutY="350.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font name="Segoe UI Semibold" size="14.0" />
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Button>
+      <Button alignment="BASELINE_LEFT" contentDisplay="BOTTOM" layoutX="20.0" layoutY="326.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="133.0" text="New? Click here" textAlignment="CENTER" textFill="#bebebe">
+         <font>
+            <Font name="Segoe UI Bold" size="13.0" />
          </font>
       </Button>
    </children>
