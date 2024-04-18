@@ -22,7 +22,7 @@
       </ImageView>
       <ImageView fitHeight="40.0" fitWidth="350.0">
          <image>
-            <Image url="@images/status-bar.png" />
+            <Image url="@images/status%20bar.png" />
          </image>
       </ImageView>
       <Label layoutX="18.0" layoutY="75.0" text="Create Account" textFill="WHITE">

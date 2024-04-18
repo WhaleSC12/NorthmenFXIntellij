@@ -20,7 +20,7 @@
       </ImageView>
       <ImageView fitHeight="40.0" fitWidth="350.0">
          <image>
-            <Image url="@images/status%20bar.png" />
+            <Image url="@images/status-bar.png" />
          </image>
       </ImageView>
       <Label layoutX="18.0" layoutY="130.0" text="DegreeEZ Login" textFill="WHITE">

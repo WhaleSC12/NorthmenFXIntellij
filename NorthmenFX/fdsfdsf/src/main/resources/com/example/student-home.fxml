@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="350.0" style="-fx-opacity: .7;">
+         <image>
+            <Image url="@../../../../../target/classes/com/example/images/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="350.0">
+         <image>
+            <Image url="@images/status-bar.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="107.0" layoutY="40.0" text="Student Home" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="74.0" text="Reminders:" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="213.0" text="Outstanding req:" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="425.0" text="Notes from Advisor:" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Label>
+      <Pane layoutY="635.0" prefHeight="65.0" prefWidth="350.0" style="-fx-background-color: #333333; -fx-background-radius: 15 15 0 0;">
+         <children>
+            <Line endX="-18.4296875" layoutX="215.0" layoutY="37.0" startX="-60.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
+            <ImageView fx:id="showHomePageButton" fitHeight="30.0" fitWidth="30.0" layoutX="28.0" layoutY="20.0">
+               <image>
+                  <Image url="@../../../../../target/classes/com/example/images/home-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="showStudentSearchPageButton" fitHeight="30.0" fitWidth="30.0" layoutX="117.0" layoutY="21.0">
+               <image>
+                  <Image url="@../../../../../target/classes/com/example/images/search-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="showStudentEightSemesterPlanButton" fitHeight="30.0" fitWidth="30.0" layoutX="206.0" layoutY="20.0">
+               <image>
+                  <Image url="@../../../../../target/classes/com/example/images/calendar-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="showStudentProfilePageButton" fitHeight="30.0" fitWidth="30.0" layoutX="294.0" layoutY="21.0">
+               <image>
+                  <Image url="@../../../../../target/classes/com/example/images/person-icon.png" />
+               </image>
+            </ImageView>
+            <Line endX="-18.4296875" layoutX="306.0" layoutY="37.0" startX="-60.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
+            <Line endX="-18.4296875" layoutX="125.0" layoutY="37.0" startX="-60.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
+         </children>
+      </Pane>
+      <CheckBox layoutX="30.0" layoutY="106.0" mnemonicParsing="false" text="Register for FALL 2024 Semester" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="30.0" layoutY="143.0" mnemonicParsing="false" text="Fill out FAFSA" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="30.0" layoutY="181.0" mnemonicParsing="false" text="Schedule Advisor Meeting" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="30.0" layoutY="243.0" mnemonicParsing="false" text="CSCE 247" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="30.0" layoutY="280.0" mnemonicParsing="false" text="MATH 142" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="30.0" layoutY="318.0" mnemonicParsing="false" text="CHEM 112/112L" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="30.0" layoutY="356.0" mnemonicParsing="false" text="CSCE 340" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="30.0" layoutY="394.0" mnemonicParsing="false" text="HIST 240" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </CheckBox>
+      <ImageView fx:id="logoutButton" accessibleRole="BUTTON" fitHeight="26.0" fitWidth="30.0" layoutX="309.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/signout-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="453.0" text="LOCK IN!" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
